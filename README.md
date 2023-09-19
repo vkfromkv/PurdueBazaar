@@ -12,3 +12,9 @@
 * Seller details such as location
 * Product features like name, description, price, images and ratings
 * User reviews
+
+## What will be the easiest part of this project?
+* Rest api to Get, Post, Put, Delete products
+* Multi - webpages pages
+* User Story Creation
+* Project Documentation
