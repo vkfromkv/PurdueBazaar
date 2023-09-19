@@ -18,3 +18,8 @@
 * Multi - webpages pages
 * User Story Creation
 * Project Documentation
+
+## What will be the most difficult part of this project?
+* Sending email notifications
+* Prioritize robust error handling & provide comprehensive documentation for customer & developer support.
+* Feedback on the whole website
