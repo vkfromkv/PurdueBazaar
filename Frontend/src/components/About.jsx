@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="container text-left">
+    <div className="container text-left my-5 h-100">
       <div
         className="d-flex flex-column text-left mx-auto mt-5"
         style={{ maxWidth: "800px" }}
