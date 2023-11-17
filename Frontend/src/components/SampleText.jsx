@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-//As you are working on the file, You can choose to ignore this file.
-const SampleText = () => {
+import { connect } from "react-redux";
+
+const SampleText = ({isAuthenticated}) => {
   const sampleTexts = [
     "Hey There! Welcome to Purdue Bazaar!",
     "Hello, You must be a Mastodon!",
@@ -19,20 +20,24 @@ const SampleText = () => {
   };
 
   return (
-    <>
-      <div className="container text-center my-5">
-        <button
-          type="button"
-          className="btn btn-primary my-5"
-          onClick={() => handleButtonClick()}
-        >
-          Click Here
-        </button>
-        <br />
-        <h1>{text}</h1>
-      </div>
-    </>
+    <div className="container text-center my-5 h-100">
+      <button
+        type="button"
+        className="btn btn-primary my-5"
+        onClick={() => handleButtonClick()}
+      >
+        Click Here
+      </button>
+      <br />
+      <h1>{text}</h1>
+      <br/><br/><br/>
+      {isAuthenticated ? <></> : <h3>Please <b>Sign in</b> to view Products</h3>}
+    </div>
   );
 };
 
-export default SampleText;
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
+});
+
+export default connect(mapStateToProps)(SampleText);

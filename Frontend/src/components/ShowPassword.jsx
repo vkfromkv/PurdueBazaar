@@ -1,16 +1,16 @@
 import React from "react";
 
-function ShowPassword() {
+function ShowPassword({ setVisible }) {
   return (
-    <div class="form-check">
+    <div className="form-check">
       <input
-        class="form-check-input"
+        className="form-check-input"
         type="checkbox"
         onChange={(event) => {
           setVisible(event.target.checked);
         }}
       ></input>
-      <label class="form-check-label pb-2">Show password</label>
+      <label className="form-check-label pb-2">Show password</label>
     </div>
   );
 }
