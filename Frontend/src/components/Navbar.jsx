@@ -24,7 +24,7 @@ const Navbar = ({ logout, isAuthenticated }) => {
   const authLinks = () => (
     <Fragment>
       <li className="nav-item">
-        <a className="nav-link" href="/">
+        <a className="nav-link" href="/products">
           Products
         </a>
       </li>

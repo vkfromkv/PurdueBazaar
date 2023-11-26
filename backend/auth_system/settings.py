@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "djoser",
     "accounts",
+    "products",
     "rest_framework_simplejwt",
     "corsheaders",
 ]

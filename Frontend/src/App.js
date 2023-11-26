@@ -43,6 +43,7 @@ const App = () => (
           <Route exact path="/about" component={Home} />
           <Route path="/terms_and_conditions" component={Terms} />
           <Route path="/privacy_policy" component={PrivacyPolicy} />
+          <Route path="/products" component={Home} />
         </Switch>
       </Layout>
     </Router>
