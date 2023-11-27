@@ -19,6 +19,8 @@ import store from "./store";
 import Layout from "./hocs/Layout";
 import Terms from "./containers/Terms";
 import PrivacyPolicy from "./containers/PrivacyPolicy";
+import About from "./components/About";
+import Products from "./containers/Products";
 
 /**
  * The main App component that configures the application's routing and provides the Redux store.
@@ -40,10 +42,10 @@ const App = () => (
             component={ResetPasswordConfirm}
           />
           <Route exact path="/activate/:uid/:token" component={Activate} />
-          <Route exact path="/about" component={Home} />
+          <Route exact path="/about" component={About} />
           <Route path="/terms_and_conditions" component={Terms} />
           <Route path="/privacy_policy" component={PrivacyPolicy} />
-          <Route path="/products" component={Home} />
+          <Route path="/products" component={Products} />
         </Switch>
       </Layout>
     </Router>

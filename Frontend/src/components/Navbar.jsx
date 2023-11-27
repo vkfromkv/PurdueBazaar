@@ -34,16 +34,29 @@ const Navbar = ({ logout, isAuthenticated }) => {
         </a>
       </li>
       <li className="nav-item">
+        <a className="nav-link" href="/about">
+          Cart
+        </a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/about">
+          Account
+        </a>
+      </li>
+      <li className="nav-item">
         <a className="nav-link" href="/" onClick={logout_user}>
           Logout
         </a>
       </li>
     </Fragment>
   );
-
+  
   return (
     <Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+        <a className="navbar-brand" href="/">
+          {"  "}Purdue Bazaar
+        </a>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav mr-auto">
             {isAuthenticated ? authLinks() : guestLinks()}

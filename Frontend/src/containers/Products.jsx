@@ -45,6 +45,13 @@ const Products = () => {
       imageUrl:
         "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ase-header-iphone-202311?wid=556&hei=752&fmt=png-alpha&.v=1698078837213",
     },
+    {
+      id: 7,
+      title: "T-shirts",
+      price: "$20",
+      imageUrl:
+        "https://www.dubaitravelguide.info/cms/wp-content/uploads/img-world-of-adventure-park.jpeg",
+    },
   ];
 
   return (
@@ -52,18 +59,20 @@ const Products = () => {
       <div className="d-flex flex-column text-left mx-auto mt-5">
         <div className="row">
           {cards.map((card) => (
-            <div key={card.id} className="col-md-6 mb-4">
-              <ProductCard
-                title={card.title}
-                price={card.price}
-                imageUrl={card.imageUrl}
-              />
+            <div key={card.id} className="col-md-3 mb-4">
+              <a href="/" className="text-decoration-none">
+                <ProductCard
+                  title={card.title}
+                  price={card.price}
+                  imageUrl={card.imageUrl}
+                />
+              </a>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </div> 
   );
-};
+  };
 
-export default Products;
+  export default Products;
